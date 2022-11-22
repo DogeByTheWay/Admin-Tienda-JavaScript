@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <title>DAW</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+  <link rel="stylesheet" href="./css/styles.css">
+ 
+</head>
+<script src="./js/tienda.js"></script>
+
+<body>
+
+	<!-- Navbar BootStrap -->
+	<nav class="navbar navbar-light bg-light">
+	  <a class="navbar-brand" href="#">
+		 <h2 class="text-danger">DWEC (Tienda DAW Panel de control) </h2>
+	  </a>  
+	
+	  <button id="agregar" class="btn btn-primary">Nuevo articulo</button>
+	</nav>
+
+	<br>
+
+	<!-- Div contenedor de los cards de articulos -->
+	<div id="contenedor"></div>  
+	
+	<!-- Componente HTML para dialogos modales -->
+	<dialog id="miDialogo" onkeydown="return false;">
+		<button id="close">X</button>
+		<div id="dialogHead">
+			<h2>Nuevo articulo<h2>
+		</div>
+		<div id="dialogContent">
+			<form id="formulario">
+				<label>id</label>
+				<input type="text"><br>
+				<label>nombre</label>
+				<input type="text"><br>
+				<label>descripcion</label>
+				<input type="text"><br>
+				<label>precio</label>
+				<input type="text">
+			</form>
+		</div>
+		<div class="text-center">
+			<button id="btnCrearArticulo"class="btn btn-info">Crear articulo</button>
+		</div>
+	</dialog>
+	
+
+</body>
+</html>
